@@ -657,7 +657,7 @@ address{
 
 /* Footer subscribe */
 .fotter-subscribe {
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .footer-form {
@@ -676,7 +676,6 @@ address{
 }
 
 .footer-input {
-    
     height: 50px;
     min-width: 358px;
     padding: 15px 16px;
@@ -701,9 +700,34 @@ address{
 }
 
 .button-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     margin-left: 12px;
     width: 200px;
     height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: var(--acent-text-color);
+    border: none;
+    color: var(--white-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form:hover,
+.button-form:focus {
+    background-color: var(--bg-buttom-colar);
+}
+
+.icon-subscribe {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
 
 
