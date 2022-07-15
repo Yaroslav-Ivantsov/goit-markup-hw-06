@@ -381,7 +381,7 @@
                 <form class="footer-form">
                     <label for="subscribe-email"></label>
                     <input class="footer-input" type="email" id="subscribe-email" name="subscribe-email" placeholder="E-mail">
-                    <button class="button-form">
+                    <button class="button-form" type="submit">
                         Подписаться
                         <svg class="icon-subscribe"> 
                             <use href="./images/icons.svg#icon-telegram"></use>
@@ -406,21 +406,49 @@
                 <form class="form" name="main-form" autocomplete="on" novalidate>
                     <div class="form-field">
                         <label class="form-field-label" for="name-user">Имя</label>
-                        <input class="form-field-input" id="name-user" type="text" name="name-user">
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="name-user" type="text" name="name-user" required>
+                            <svg class="modal-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#person-modal"></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="form-field">
                         <label class="form-field-label" for="user-phone">Телефон</label>
-                        <input class="form-field-input" id="user-phone" type="tel" name="user-phone">
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-phone" type="tel" name="user-phone" required>
+                            <svg class="modal-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#phone-modal"></use>
+                            </svg>
+                        </div>
+                        
                     </div>
                     <div class="form-field">
                         <label class="form-field-label" for="user-email">Почта</label>
-                        <input class="form-field-input" id="user-email" type="email" name="user-email">
+                        <div class="form-field-inner">
+                            <input class="form-field-input" id="user-email" type="email" name="user-email" required>
+                            <svg class="modal-icon" aria-hidden="true">
+                                <use href="./images/icons.svg#email-modal"></use>
+                            </svg>
+                        </div>
+                        
                     </div>
                     <div class="form-field">
                         <label class="form-field-label" for="user-comment">Комментарий</label>
                         <textarea class="form-field-input form-field-textarea" name="user-comment" id="user-comment" rows="3" placeholder="Введите текст"></textarea>
                     </div>
-
+                        <label class="label-checkbox" for="accept-terms">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="accept-terms" id="accept-terms" required>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a href="#" class="terms-link">Условия договора</a>
+                            <svg class="check-icon">
+                                <use href="./images/icons.svg#vector-check"></use>
+                            </svg>
+                            <svg class="active-icon">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </label>
+                        <button class="send-button" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
