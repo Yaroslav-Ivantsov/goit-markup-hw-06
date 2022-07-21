@@ -35,6 +35,10 @@ html{
     box-sizing: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 
 
 body{
@@ -580,8 +584,6 @@ footer{
 
 .footer-block .icon-list{
     display: flex;
-    width: 206px;
-    height: 44px;
     margin-left: auto;
     margin-right: auto;
 }
